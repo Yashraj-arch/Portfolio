@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashraj Nimbalkar | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ecf0f1;
+            margin-bottom: 1rem;
+        }
+
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .contact-links a:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+        }
+
+        .date-location {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category h4 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .card-header {
+                flex-direction: column;
+            }
+            .date-location {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Yashraj Nimbalkar</h1>
+        <p>Business Operations | Data Analytics | AI/ML Student</p>
+        <div class="contact-links">
+            <a href="mailto:yashraj241103@gmail.com">Email Me</a>
+            <a href="https://linkedin.com/in/yashraj-arch" target="_blank">LinkedIn</a>
+            <a href="https://medium.com/@nimbalkaryashraj53" target="_blank">Medium</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="profile">
+            <h2>Profile</h2>
+            <div class="card">
+                <p>B.Com graduate with business experience in e-commerce and manufacturing operations. Built strong foundations in unit economics, cost control, demand planning, pricing, and supply chain management through direct execution. Experienced in working with partners and teams, with clear communication and structured thinking. Currently pursuing MCA (AI/ML), integrating analytics with AI tools for practical business decision-making.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3>Founder & Operator</h3>
+                        <h4>Dhani Agro Food Industries</h4>
+                    </div>
+                    <span class="date-location">09/2022 - 03/2025 | Baramati, MH</span>
+                </div>
+                <ul>
+                    <li>Managed full production cycle, supplying 12 hotel clients daily with 70+ kg/month output through consistent inventory planning and demand forecasting.</li>
+                    <li>Achieved a 37.5% cost reduction, dropping per-unit production cost from ₹160 to ₹100.</li>
+                    <li>Improved profit margins through product-level cost engineering: reformulated recipes (e.g., Kalakand) to reduce production cost to ₹240/kg while raising selling price to ₹400/kg (~67% margin).</li>
+                    <li>Applied risk management, supplier relationship management, and procurement optimization in a live production environment.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3>Intern</h3>
+                        <h4>Shree Chhatrapati Co-operative Credit Society</h4>
+                    </div>
+                    <span class="date-location">11/2024 - 01/2025 | Walchandnagar, MH</span>
+                </div>
+                <ul>
+                    <li>Validated and reconciled financial data across member accounts, ensuring accuracy and regulatory compliance.</li>
+                    <li>Prepared monthly financial statements and budget reports in Excel, analyzing member loan and savings data.</li>
+                    <li>Documented end-to-end accounting processes and identified process steps for ledger entries and transaction workflows.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3>Founder and Operator</h3>
+                        <h4>Clickforayurveda</h4>
+                    </div>
+                    <span class="date-location">03/2021 - 01/2022 | Baramati, MH</span>
+                </div>
+                <ul>
+                    <li>Sourced and sold Ayurvedic products online achieving 25-45% profit margins.</li>
+                    <li>Executed digital marketing through Facebook and Instagram ads, content creation, and health blogs.</li>
+                    <li>Applied unit economics thinking: analyzed CAC vs LTV, retention rates, and demand patterns.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Spotify Recommendation System Analysis</h3>
+                    <span class="date-location">01/2026 - 02/2026</span>
+                </div>
+                <ul>
+                    <li>Identified 4 repeatable algorithmic patterns (Recency Bias, Old Preference Revival, Weak Skip Learning, Limited Exploration Window).</li>
+                    <li>Applied statistical validation using Wilson Confidence Intervals.</li>
+                    <li>Proposed product-level improvements balancing user discovery with business KPIs (engagement, retention, session length).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Key Skills</h2>
+            <div class="card skills-grid">
+                <div class="skill-category">
+                    <h4>Technical Skills</h4>
+                    <p>Advanced Excel, SQL, Power BI, Python</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Business Operations</h4>
+                    <p>Unit Economics, Pricing Strategy, Supply Chain, Inventory & Risk Management, AI-assisted Research, Open-Source LLMs</p>
+                </div>
+                <div class="skill-category">
+                    <h4>BA Frameworks</h4>
+                    <p>BRD/FRD Documentation, User Stories, SWOT, PESTLE, RICE Prioritization, AARRR, North Star Metric</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Soft Skills</h4>
+                    <p>Stakeholder Communication, Data Storytelling, Structured Problem-Solving, Research & Documentation</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education & Certifications</h2>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3>Master's of Computer Applications (AI & ML)</h3>
+                        <h4>Amity University Online</h4>
+                    </div>
+                    <span class="date-location">07/2025 - Present</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3>Bachelor of Commerce (Banking And Finance)</h3>
+                        <h4>Vishwasrao Ransing College</h4>
+                    </div>
+                    <span class="date-location">04/2022 - 04/2025</span>
+                </div>
+                <ul>
+                    <li>Maintained a strong CGPA of 8.83.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h3>Google Data Analytics Professional Certificate</h3>
+                        <h4>Coursera</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Yashraj Nimbalkar. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
